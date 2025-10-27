@@ -15,6 +15,10 @@ mongoose.connect(process.env.MONGO_URI)
     .catch(err => console.error('MongoDB connection error:', err));
 // --------------------------
 
+app.get('/', (req, res) => {
+    res.send('Backend is operational!');
+});
+
 
 // --- Middleware ---
 app.use(cors({
