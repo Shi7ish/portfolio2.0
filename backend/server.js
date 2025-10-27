@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 // --- Middleware ---
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://potfolio-mu-six.vercel.app/', 
     methods: ['POST'],
 }));
 app.use(express.json()); 
