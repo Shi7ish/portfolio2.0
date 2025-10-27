@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 // --- Middleware ---
 app.use(cors({
-    origin: 'https://potfolio-mu-six.vercel.app/', 
+    origin: 'https://potfolio-mu-six.vercel.app', 
     methods: ['POST'],
 }));
 app.use(express.json()); 
