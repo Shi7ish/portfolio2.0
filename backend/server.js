@@ -27,6 +27,4 @@ app.use(express.json());
 app.use('/api/contact', contactRouter);
 
 // --- Server Start ---
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+module.exports = app;
